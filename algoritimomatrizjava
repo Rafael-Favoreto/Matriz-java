@@ -1,21 +1,12 @@
-public class MatrizMultiplication {
+public class MatrizMultiplica {
 
     public static void main(String[] args) {
 
-        // Definindo as matrizes
         int[][] matrizA = {{3, 1, 3}, {6, 5, 5}};
         int[][] matrizB = {{100, 50}, {50, 100}, {50, 50}};
 
-        // Verificando se é possível realizar a multiplicação
-        if (matrizA[0].length != matrizB.length) {
-            System.out.println("Não é possível realizar a multiplicação das matrizes.");
-            return;
-        }
-
-        // Definindo a matriz resultante
         int[][] matrizResultado = new int[matrizA.length][matrizB[0].length];
 
-        // Realizando a multiplicação
         for (int i = 0; i < matrizA.length; i++) {
             for (int j = 0; j < matrizB[0].length; j++) {
                 for (int k = 0; k < matrizA[0].length; k++) {
@@ -24,7 +15,6 @@ public class MatrizMultiplication {
             }
         }
 
-        // Imprimindo a matriz resultante
         System.out.println("Matriz Resultante:");
         for (int i = 0; i < matrizResultado.length; i++) {
             for (int j = 0; j < matrizResultado[0].length; j++) {
